@@ -1,5 +1,4 @@
 package ru.itmo.basics.lesson1;
-
 import java.util.Scanner;
 
 /*
@@ -70,7 +69,6 @@ public class Main {
         int num2 = scn.nextInt();
         int num3 = scn.nextInt();
         scn.close();
-
         System.out.println(num1);
         System.out.println(num2);
         System.out.println(num3);
@@ -80,16 +78,16 @@ public class Main {
             ● Если b нечетное, выведите “Нечетное”
             ● Если b четное, выведите “Четное”
             ● Если b четное и больше 100, выведите “Выход за пределы диапазона”*/
-        public static void workWithIfElse() {
-            Scanner scn = new Scanner(System.in);
-            int b = scn.nextInt();
-            if (b % 2 != 0) {
-                System.out.println("Нечетное");
-            } else if (b > 100) {
-                System.out.println("Выход за пределы диапазона");
-            } else {
-                System.out.println("Четное");
-            }
-            scn.close();
+    public static void workWithIfElse() {
+        Scanner scn = new Scanner(System.in);
+        int b = scn.nextInt();
+        if (b % 2 != 0) {
+            System.out.println("Нечетное");
+        } else if (b > 100) {
+            System.out.println("Выход за пределы диапазона");
+        } else {
+            System.out.println("Четное");
         }
+        scn.close();
+    }
 }
