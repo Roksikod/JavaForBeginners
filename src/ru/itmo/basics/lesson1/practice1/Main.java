@@ -26,17 +26,18 @@ They both need Scanner.
            знаю
            Java.*/
     public static void printAffirmation() {
-        String[] affirmation = {"Я", "хорошо", "знаю", "Java."};
-        for (String s : affirmation) {
-            System.out.println(s);
-        }
+        String iAm = "Я";
+        String good = "хорошо";
+        String know = "знаю";
+        String javaPoint = "Java.";
+        System.out.println(iAm+"\n"+good + "\n" + know + "\n" + javaPoint);
     }
 
     /* Task 2. Посчитайте результат выражения
             (46 + 10) * (10 / 3)
             (29) * (4) * (-15)*/
     public static void getResult() {
-        System.out.println((46 + 10) * (10 / 3));
+        System.out.println((46 + 10.0) * (10.0 / 3));
         System.out.println((29) * (4) * (-15));
     }
 
@@ -44,7 +45,7 @@ They both need Scanner.
     выражение: (number / 10) / 10. Результат выведите на консоль.*/
     public static void getResultTask3() {
         int number = 10500;
-        double resultInt = (double) (number / 10) / 10;
+        double resultInt = ((number * 1.0) / 10) / 10;
         int resultDouble = (number / 10) / 10;
         System.out.println("Int result: " + resultInt + ". Double result: " + resultDouble + ".");
     }
