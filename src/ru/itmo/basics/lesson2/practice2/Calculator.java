@@ -17,21 +17,21 @@ public class Calculator {
     //Divide two numbers
     static double div(double number1, double number2) {
         if (number2 != 0) {
-           return number1 / number2;
-        }
-        return 0;
-    }
-
-    static long div(long number1, long number2) {
-        if (number2 != 0) {
             return number1 / number2;
         }
         return 0;
     }
 
-    static int div(int number1, int number2) {
+    static double div(long number1, long number2) {
         if (number2 != 0) {
-            return number1 / number2;
+            return (number1 * 1.0) / number2;
+        }
+        return 0;
+    }
+
+    static double div(int number1, int number2) {
+        if (number2 != 0) {
+            return (number1 * 1.0) / number2;
         }
         return 0;
     }

@@ -64,8 +64,8 @@ public class Main {
         Box box = new Box(20, 25, 30);
         Box cube = new Box(100);
         Box defaultBox = new Box();
-        cube.showVolume();
-        box.showVolume();
-        defaultBox.showVolume();
+        System.out.println(cube.toString());
+        System.out.println(box.toString());
+        System.out.println(defaultBox.toString());
     }
 }

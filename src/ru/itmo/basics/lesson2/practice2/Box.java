@@ -25,11 +25,36 @@ public class Box {
         //this(size, size, size); так можно вызвать конструктор из конструктора, чтобы не дублировать код
     }
 
-    double getVolume() {
-        return length * width * height;
-    }
-    void showVolume(){
-        System.out.println(getVolume());
+    public double getLength() {
+        return length;
     }
 
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    @Override
+    public String toString() {
+        return "Параметры коробки: " +
+                "length=" + length +
+                ", width=" + width +
+                ", height=" + height +
+                '.';
+    }
 }
