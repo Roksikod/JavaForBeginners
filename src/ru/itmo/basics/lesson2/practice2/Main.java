@@ -17,9 +17,9 @@ public class Main {
         long numberLong1 = Long.parseLong(sc.next());
         long numberLong2 = Long.parseLong(sc.next());*/
 
-            System.out.println("Введите, пожалуйста, два числа типа int");
-            int numberInt1 = Integer.parseInt(sc.next());
-            int numberInt2 = Integer.parseInt(sc.next());
+        System.out.println("Введите, пожалуйста, два числа типа int");
+        int numberInt1 = Integer.parseInt(sc.next());
+        int numberInt2 = Integer.parseInt(sc.next());
 
         switch (operation) {
             case "+":
