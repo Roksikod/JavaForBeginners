@@ -19,7 +19,7 @@ public class Main {
         //task3
         System.out.println("Введите текст для цензуры ");
         String textWithBadWord = scanner.nextLine();
-        System.out.println(replaceSubstring(textWithBadWord));
+        System.out.println(replaceSubstring(textWithBadWord, "БЯКА", "[вырезано цензурой]"));
 
         //task4
         System.out.print("Введите первую строку ");
@@ -61,24 +61,25 @@ public class Main {
     public static boolean isPalindrom(String s) {
         s = s.replaceAll("[^A-Za-zА-Яа-я0-9]", ""); //удаляем все символы, кроме букв и цифр
         s = s.toLowerCase();    //переводим в нижний регистр
-        String sInverted = new StringBuilder(s).reverse().toString().toLowerCase(); //создаем перевертыш строки в нижнем регистре
+        String sInverted = new StringBuilder(s).reverse().toString(); //создаем перевертыш строки в нижнем регистре
         return s.equals(sInverted);  //возвращаем результат их сравнения по значению
     }
 
     //task3 метод, заменяющий в тексте все вхождения слова «бяка» на «[вырезано цензурой]»
-    public static String replaceSubstring(String text) {
-        text = text.replaceAll("БЯКА", "[вырезано цензурой]");
-        text = text.replaceAll("БЯКа", "[вырезано цензурой]");
-        text = text.replaceAll("БЯка", "[вырезано цензурой]");
-        text = text.replaceAll("Бяка", "[вырезано цензурой]");
-        text = text.replaceAll("бяка", "[вырезано цензурой]");
-        text = text.replaceAll("БЯкА", "[вырезано цензурой]");
-        text = text.replaceAll("БяКА", "[вырезано цензурой]");
-        text = text.replaceAll("бЯКА", "[вырезано цензурой]");
-        text = text.replaceAll("бяКА", "[вырезано цензурой]");
-        text = text.replaceAll("бякА", "[вырезано цензурой]");
-        text = text.replaceAll("бЯка", "[вырезано цензурой]");
-        return text; //Бяка ела кулебяка мыла руки бякака
+    public static String replaceSubstring(String text, String oldWord, String newWord) {
+        //Бяка ела кулебяка мыла руки бякака
+        String[] words = text.split(" ");
+        for (int i = 0; i < words.length; i++) {
+            String temp = words[i];
+            if (temp.toLowerCase().equals(oldWord.toLowerCase())) {
+                words[i] = newWord;
+            }
+        }
+        String newText = "";
+        for (String word : words) {
+            newText += word + " ";
+        }
+        return newText;
     }
 
     //task4 Имеются две строки. Найти количество вхождений одной (являющейся подстрокой) в другую
@@ -86,7 +87,7 @@ public class Main {
         int cnt = 0;
         String[] words = string1.split(" ");
         for (String word : words) {
-            if (word.contains(string2)) {
+            if (word.toLowerCase().contains(string2.toLowerCase())) {
                 cnt++;
             }
         }
@@ -95,6 +96,11 @@ public class Main {
 
     //метод, который инвертирует слова в строке (в ней нет знаков препинания, и слова разделены пробелами)
     public static String reverseString(String str) {
-        return new StringBuilder(str).reverse().toString();
+        String[] words = str.split(" ");
+        String newString = "";
+        for (String word : words) {
+            newString += new StringBuilder(word).reverse().toString() + " ";
+        }
+        return newString;
     }
 }
