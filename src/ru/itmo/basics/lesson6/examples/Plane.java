@@ -1,4 +1,4 @@
-package ru.itmo.basics.lesson6;
+package ru.itmo.basics.lesson6.examples;
 
 public class Plane extends Transport{
     public Plane(Integer weight, Integer seatPlace, Boolean isFlying) {
