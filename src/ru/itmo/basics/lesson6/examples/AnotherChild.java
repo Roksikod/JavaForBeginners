@@ -1,4 +1,4 @@
-package ru.itmo.basics.lesson6;
+package ru.itmo.basics.lesson6.examples;
 
 public class AnotherChild extends  Parent {
     public AnotherChild(String name) {
