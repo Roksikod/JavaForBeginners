@@ -12,21 +12,22 @@ public class User {
         return name;
     }
 
-    public void setName(String name) {
-        System.out.println("Введите имя ");
+    public void setName() {
         this.name = scanner.next();
     }
+
     public int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
-        System.out.println("Введите возраст ");
+    public void setAge() {
         this.age = scanner.nextInt();
     }
 
     //метод для получения возраста пользователя
-    public String getUserInfo(String name, int age) {
+    public String getUserInfo() {
+        System.out.println("Введите возраст ");
+        age = scanner.nextInt();
         return ("Возраст пользователя: " + age);
     }
 }
