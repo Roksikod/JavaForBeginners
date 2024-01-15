@@ -6,6 +6,7 @@ package ru.itmo.basics.multithreading;
 
  */
 public class ThreadFlow {
+
     public static void main(String[] args) {
         System.out.println("Start");
         Thread thread = new Thread(new Runnable() {
