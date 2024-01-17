@@ -1,10 +1,10 @@
-#Java Programming Basics Training Repository
+# Java Programming Basics Training Repository
 
 📝This repository is _for educational purposes_.
 
 It was created based on lectures taught at the Technical University of St. Petersburg Russia.
 
-I did the practical work myself.
+## I did the practical work myself.
 
 During the training, I studied the basics of Java programming:
 
@@ -17,3 +17,5 @@ wrappers and interfaces,
 exception handling, 
 input and output streams, 
 StreamAPI and multithreading.
+
+<h1 align="center">Thank you for your attention!</h1>
