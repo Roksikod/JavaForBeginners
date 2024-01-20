@@ -8,7 +8,7 @@ It was created based on lectures taught at the Technical University of St. Peter
 
 During the training, I studied the basics of Java programming:
 
-- Programming language syntax - Pure functions/Impure functions, 
+- programming language syntax - Pure functions/Impure functions, 
 - keywords & access modifiers, 
 - creating and working with collections, 
 - object-oriented programming and its principles (inheritance, polymorphism), 
