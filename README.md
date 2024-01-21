@@ -18,4 +18,4 @@ During the training, I studied the basics of Java programming:
 - input and output streams, 
 - StreamAPI and multithreading.
 
-<h1 align="center">Thank you for your attention!</h1>
+<h3 align="left">Thank you for your attention!</h3>
