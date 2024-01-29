@@ -17,5 +17,6 @@ During the training, I studied the basics of Java programming:
 - exception handling, 
 - input and output streams, 
 - StreamAPI and multithreading.
+- 
 
 <h3 align="left">Thank you for your attention!</h3>
