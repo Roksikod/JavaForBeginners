@@ -1,7 +1,6 @@
 # Java Programming Basics Training Repository
 
 📝This repository is _for educational purposes_.
-
 It was created based on lectures taught at the Technical University of St. Petersburg Russia.
 
 ## I did the practical work myself.
